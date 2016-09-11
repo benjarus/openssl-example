@@ -2,7 +2,7 @@
 #include <iostream>
 
 using namespace std;
-
+/* hei hei */
 int main() {
   cout << "SHA-1 with 1 iteration" << endl;
   cout << Crypto::hex(Crypto::sha1("Test")) << endl << endl;
