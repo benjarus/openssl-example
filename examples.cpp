@@ -19,4 +19,7 @@ int main() {
   
   cout << "SHA-512 with one iteration" << endl;
   cout << Crypto::hex((Crypto::sha512("Test"))) << endl;
+  
+  cout << "md5 with one iteration" << endl;
+  cout << Crypto::hex((Crypto::md5("Test"))) << endl;
 }
