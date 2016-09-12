@@ -15,5 +15,8 @@ int main() {
   cout << Crypto::hex(Crypto::pbkdf2("Password", "Salt")) << endl;
   
   cout << "SHA-256 with one iteration" << endl;
-  cout << Crypto::hex(Crypto::sha256(Crypto::sha1("Test"))) << endl;
+  cout << Crypto::hex((Crypto::sha256("Test"))) << endl;
+  
+  cout << "SHA-512 with one iteration" << endl;
+  cout << Crypto::hex((Crypto::sha512("Test"))) << endl;
 }
