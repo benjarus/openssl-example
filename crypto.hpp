@@ -25,10 +25,10 @@ public:
   static std::string md5(const std::string &input, size_t iterations = 1) {
     std::string hash;
     hash.resize(128 / 8);
-    md5((const unsigned char *)input.c_str(), input.size(), (unsigned char *)hash.c_str());
+    MD5((const unsigned char *)input.c_str(), input.size(), (unsigned char *)hash.c_str());
 
     for (size_t c = 1; c < iterations; ++c)
-      md5((const unsigned char *)hash.c_str(), hash.size(), (unsigned char *)hash.c_str());
+      MD5((const unsigned char *)hash.c_str(), hash.size(), (unsigned char *)hash.c_str());
 
     return hash;
   }
